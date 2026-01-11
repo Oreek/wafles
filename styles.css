@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: #fff8e1;
+    min-heightt: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #5d4037;
+    margin-botton: 20px;
+}
+
+.total-count {
+    font-size: 1.5rem;
+    color: #8b5a2b;
+    margin-bottom: 30px;
+}
+
+.total-count span:first-child {
+    font-size: 4rem;
+    fot-weight: bold;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waffle-btn {
+    font-size: 8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+    
+}
+
+.waffle-btn:hover {
+    transform: scale(1.1);
+}
+
+.waffle-btn:active {
+    transform: scale(0.95);
+}
+
+.click-text {
+    font-size: 1.2rem;
+    color: #8b5a2b;
+    margin: 24px 0;
+}
+
+.auto-clicker {
+    margin-top: 30px;
+}
+
+#auto-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border:  none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #2980b9
+}
+
+#auto-btn:hover {
+    transform: scale(1.05);
+}
+
+#auto-btn:active {
+    background: #e74c3c;
+}
+
+#auto-stats {
+    margin-top:  15px;
+    font-size: 1rem;
+    color: #666;
+}
