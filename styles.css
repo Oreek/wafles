@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fredoka One', cursive;
-    background-color: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    background-color: #eecc93;
     min-heightt: 100vh;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #5d4037;
     margin-botton: 20px;
 }
@@ -79,7 +79,7 @@ main {
     color: white;
     cursor: pointer;
     transition: all 0.3s;
-    background: #2980b9
+    background: #8B4513
 }
 
 #auto-btn:hover {
@@ -87,7 +87,7 @@ main {
 }
 
 #auto-btn.active {
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: #e74c3c;
 }
 
 #auto-stats {
@@ -142,4 +142,33 @@ main {
 .splash.fade-out {
     opacity: 0;
     pointer-events: none;
+}
+
+.waffle-list {
+    margin-top: 100px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: #5d4037;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.waffle-list h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #ffeaa7;
+    font-weight: bold;
+}
+
+.waffle-list ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.waffle-list ul li {
+    margin-bottom: 10px;
+    padding: 20px;
+    background: #8b5a2b
 }
