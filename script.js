@@ -10,10 +10,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const waffleBtn = document.getElementById("make-waffle")
     const autoBtn = document.getElementById("auto-btn");
     const autoStatus = document.getElementById("auto-stats");
+    const waffleStack = document.getElementById("waffle-stack");
 
     function makeWaffle() {
         waffleCount++;
         countDisplay.textContent = waffleCount;
+
+        const waffle  = document.createElement('span');
+        waffle.textContent = '🧇';
+        waffleStack.appendChild(waffle);
+
+        if (waffleStack.children.length > 50) {
+            waffleStack.removeChild(waffleStack.firstChild);
+        }
     }
 
     function toggleAutoClicker() {

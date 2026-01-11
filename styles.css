@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fredoka One', cursive;
-    background-color: #fff8e1;
+    background-color: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
     min-heightt: 100vh;
     display: flex;
     justify-content: center;
@@ -86,12 +86,33 @@ main {
     transform: scale(1.05);
 }
 
-#auto-btn:active {
-    background: #e74c3c;
+#auto-btn.active {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
 }
 
 #auto-stats {
     margin-top:  15px;
     font-size: 1rem;
     color: #666;
+}
+
+.waffle-stack {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.waffle-stack span {
+    font-size:2rem;
+    animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.2);}
+    100% {transform: scale(2);}
 }
