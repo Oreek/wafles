@@ -2,6 +2,14 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
+    const splash = document.getElementById('splash');
+    setTimeout(function() {
+        splash.classList.add('fade-out');
+        setTimeout(function() {
+            splash.style.display = 'none';
+        }, 500);
+    }, 2000);
+
     let waffleCount = 0;
     let autoClickerInterval = null;
     let isAutoOn = false;
@@ -20,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         waffle.textContent = '🧇';
         waffleStack.appendChild(waffle);
 
-        if (waffleStack.children.length > 50) {
+        if (waffleStack.children.length > 23) {
             waffleStack.removeChild(waffleStack.firstChild);
         }
     }
